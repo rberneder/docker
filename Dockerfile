@@ -97,7 +97,7 @@ CMD ["php-fpm"]
 
 FROM pimcore_php_min AS pimcore_php_default
 
-ARG IMAGICK_VERSION_FROM_SRC="28f27044e435a2b203e32675e942eb8de620ee58";
+ARG IMAGICK_VERSION_FROM_SRC="";
 
 RUN set -eux; \
     \
