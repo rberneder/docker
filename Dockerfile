@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-ARG PHP_VERSION="8.2"
+ARG PHP_VERSION="8.3"
 ARG DEBIAN_VERSION="bookworm"
 
 FROM php:${PHP_VERSION}-fpm-${DEBIAN_VERSION} AS pimcore_php_min
@@ -97,7 +97,7 @@ CMD ["php-fpm"]
 
 FROM pimcore_php_min AS pimcore_php_default
 
-ARG IMAGICK_VERSION_FROM_SRC="";
+ARG IMAGICK_VERSION_FROM_SRC="28f27044e435a2b203e32675e942eb8de620ee58";
 
 RUN set -eux; \
     \
