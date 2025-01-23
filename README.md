@@ -28,12 +28,12 @@ Additionally we're offering 2 special tag suffixes:
 We're also offering special tags for specific PHP versions, e.g. `php8.2.5-v2.0`. 
 
 ### Pimcore version compatibility & recommendations
-| Image / Pimcore | v10 | v11 | v2023.x |v2024.x |v2025.x
-|-----------------|-----|--|---------|--------|------|
-| v1              | ✅   | ✅ | ✅       |✅*   |✅*   |
-| v2              | ❌   | ✅ | ✅       |✅*  |✅*   | 
-| v3              | ❌   | ✅* | ✅*      |✅*   |✅*   |
-| v4              | ❌   | ❌ | ✅*      |✅*    |✅*   |
+| Image / Pimcore | v10 | v11 | v2023.3 | v2024.4 |v2025.x
+|-----------------|-----|--|---------|---------|-----|
+| v1              | ✅   | ✅ | ✅       | ✅       |❌  |
+| v2              | ❌   | ✅ | ✅       | ✅       |❌   | 
+| v3              | ❌   | ✅* | ✅*      | ✅       |✅   |
+| v4              | ❌   | ❌ | ❌       | ✅*      |✅*  |
 
 > *) recommended version
 
