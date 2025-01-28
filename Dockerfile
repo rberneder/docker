@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-ARG PHP_VERSION="8.2"
+ARG PHP_VERSION="8.3"
 ARG DEBIAN_VERSION="bookworm"
 
 FROM php:${PHP_VERSION}-fpm-${DEBIAN_VERSION} AS pimcore_php_min
@@ -188,13 +188,10 @@ RUN set -eux; \
         openssl \
     ; \
     \
-    docker-php-ext-configure imap --with-kerberos --with-imap-ssl; \
     docker-php-ext-install \
-        imap \
         soap \
     ; \
     docker-php-ext-enable \
-        imap \
         soap \
     ; \
     \
